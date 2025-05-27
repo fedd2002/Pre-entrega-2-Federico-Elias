@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+
+/*!-----HEADER------*/
+
+body{ /*!-----FUENTE GRAL------*/
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 5px;
+}
+
+.nav_bar{
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.nav_bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    color: black;
+}
+
+body a{ /*!-----NAV BAR BOTON------*/
+    text-decoration: none;
+    color: black;
+}
+
+header img{ /*!-----LOGO IZQUIERDA ARRIBA------*/
+    width: 5%;
+    height: 5%;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+/**-----MAIN PAG PRODUCTOS------*/
+
+.hero2{ /*!----BANNER FONDO PAG2----*/
+    height: 50vh;
+    background-image: url(../img/mockupcrewneck.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero2 p{
+    text-align: center;
+    padding: 150px;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+}
+
+.ropa1-pag2 img{
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 44px;
+}
+
+.ropa1-pag2 p{
+    text-align: center;
+    display: inline;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.ropa2-pag2 img{
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 44px;
+}
+
+.ropa2-pag2 p{
+    text-align: center;
+    display: inline;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*?-----MAIN------*/
+
+/* PRODUCTOS: .ropa y .ropa2 en GRID */
+.ropa,
+.ropa2 {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 1rem;
+padding: 1rem;
+justify-items: center;
+}
+
+.ropa img,
+.ropa2 img {
+width: 100%;
+max-width: 500px;
+height: auto;
+object-fit: cover;
+border-radius: 8px;
+transition: transform 0.3s ease;
+}
+
+.ropa img:hover,
+.ropa2 img:hover {
+transform: scale(1.05);
+}
+
+.selector {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+padding: 1rem;
+flex-wrap: nowrap;
+overflow-x: auto;
+}
+
+.selector img {
+height: auto;
+max-height: 400px;
+width: auto;
+border-radius: 8px;
+transition: transform 0.3s ease;
+}
+
+.selector img:hover {
+transform: scale(1.05);
+}
+
+
+.mejor p{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.bg{ /*!----BANNER FONDO----*/
+    height: 50vh;
+    background-image: url(../img/mockup247graffiti.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main h2{ /*!-----TITULO SOBRE ROPA------*/
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+input[type="email"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+body .rectangulo{
+    width: 100%;
+    height: 280px;
+    background-color: black;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+body .rectangulo .p1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+}
+
+body .rectangulo .p2{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fixed img{
+    height: 75px;
+    width: 75px;
+}
+
+/*!-----MAIN PAG NOSOTROS------*/
+
+.hero3 p{
+    text-align: center;
+    padding: 150px;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero3{ /*!----BANNER FONDO----*/
+    height: 50vh;
+    background-image: url(../img/mockup-front-hoodie.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sobre-nosotros p{
+    text-align: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.negrita2{
+    font-weight: bold;
+}
+
+.negrita3{
+    font-weight: bold;
+}
+
+.map{
+    text-align: center;
+    padding: 50px;
+}
+
+.rectangulo2{
+    width: 1500px;
+    height: 500px;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    border: 1px solid black;
+}
+
+.donde{
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/**-----FOOTER------*/
+
+            /**-----FOOTER PRODUCTOS------*/
+
+.rectangulo-footer-productos{
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    align-content: center;
+}
+
+.rectangulo-footer-productos img{
+    height: 50px;
+    width: 50px;
+    margin: 0 50px 50px 0;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    background-size: 50px;
+    border-radius: 25%;
+}
+
+.rectangulo-footer-productos p{
+    margin: 10px;
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+            /**-----FOOTER PRODUCTOS------*/
+
+
+.rectangulo-footer{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+}
+
+footer{
+    background-color: lch(100% 0.01 296.81);
+}
+
+.rectangulo-footer img{
+    height: 50px;
+    width: 50px;
+    margin: 0 50px 50px 0;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    background-size: 50px;
+    border-radius: 25%;
+}
+
+.rectangulo-footer p{
+    margin: 10px;
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.end{
+    text-align: center;
+    display: inline;
+    align-items: center;
+    margin: 10px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.contactanos p{
+    text-align: center;
+    display: inline;
+    align-items: center;
+    margin: 10px;
+    font-weight: normal;
+}
+
+
+/* PÁGINA TALLES */
+
+/*! HEADER */
+
+.hero4{ /*!----BANNER FONDO----*/
+    height: 50vh;
+    background-image: url(../img/mockup-totebag.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.hero4 p{
+    text-align: center;
+    padding: 150px;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+/*! ------- MAIN ------- */
+
+.talle-hoodie img{
+    width: 50vh;
+    height: 50vh;
+    margin: 0px;
+    align-items: center;
+}
+
+/* PÁGINA DEVOLUCIONES */
+
+.hero5{ /*!----BANNER FONDO----*/
+    height: 50vh;
+    background-image: url(../img/mockup-totebag.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.hero5 p{
+    text-align: center;
+    padding: 150px;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+}
+
+.devoluciones-text1{
+    margin: 10px;
+}
+
+.devoluciones-text2{
+    margin: 10px;
+}
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.texto1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.negrita-247{
+    font-weight: bold;
+}
+
+.titulo2{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.texto3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto4{
+    font-size: 18px;
+    text-align: center;
+}
+
+.titulo3{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.texto5{
+    font-size: 18px;
+    text-align: center;
+}
+
+.negrita-A{
+    font-weight: bold;
+}
+
+.negrita-B{
+    font-weight: bold;
+}
+
+.negrita-C{
+    font-weight: bold;
+}
+
+.negrita-D{
+    font-weight: bold;
+}
+
+.negrita-E{
+    font-weight: bold;
+}
+
+.negrita-F{
+    font-weight: bold;
+}
+
+.boton-formulario{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .nav_bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+header {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newsletter {
+padding: 2rem;
+background: #000000;
+text-align: center;
+}
+
+.newsletter input[type="email"] {
+padding: 0.5rem;
+width: 80%;
+max-width: 300px;
+margin-top: 1rem;
+}
+
+.newsletter button {
+margin-top: 1rem;
+padding: 0.5rem 1rem;
+background-color: #000000;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+a:hover {
+color: #007BFF;
+text-decoration: underline;
+}
+
+img {
+transition: transform 0.3s ease;
+}
+
+img:hover {
+transform: scale(1.05);
+}
