@@ -574,3 +574,77 @@ transition: transform 0.3s ease;
 img:hover {
 transform: scale(1.05);
 }
+/* Mejoras visuales */
+.ropa article,
+.ropa2 article {
+background-color: #fff;
+padding: 1rem;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.ropa article:hover,
+.ropa2 article:hover {
+transform: scale(1.03);
+}
+
+.ropa article,
+.ropa2 article {
+background-color: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+padding: 1rem;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.5rem;
+}
+
+.ropa article:hover,
+.ropa2 article:hover {
+transform: scale(1.03);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.ropa article img,
+.ropa2 article img {
+width: 100%;
+max-width: 500px;
+height: auto;
+border-radius: 8px;
+}
+
+/* Títulos y precios */
+.ropa article h3,
+.ropa2 article h3 {
+font-size: 1.1rem;
+margin: 0.5rem 0 0;
+}
+
+.ropa article p,
+.ropa2 article p {
+font-size: 1rem;
+color: #444;
+margin: 0;
+}
+
+/* Botón */
+.ropa article button,
+.ropa2 article button {
+background-color: #111;
+color: white;
+padding: 8px 16px;
+border: none;
+border-radius: 8px;
+margin-top: auto;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.ropa article button:hover,
+.ropa2 article button:hover {
+background-color: #333;
+}
